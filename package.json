@@ -1,0 +1,22 @@
+{
+  "name": "xerxes-fastify-server",
+  "version": "0.0.1",
+  "description": "node fastify server",
+  "main": "app.js",
+  "repository": "https://github.com/XcXerxes/xerxes-fastify-server.git",
+  "author": "Xcxerxes",
+  "license": "MIT",
+  "scripts": {
+    "start": "./node_modules/nodemon/bin/nodemon.js app.js",
+    "build": "node app.js"
+  },
+  "dependencies": {
+    "fastify": "^0.43.0"
+  },
+  "devDependencies": {
+    "fastify-no-icon": "^1.0.1",
+    "nodemon": "^1.14.12",
+    "pino": "^4.10.3",
+    "pino-tee": "^0.2.0"
+  }
+}
