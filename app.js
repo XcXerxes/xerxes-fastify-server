@@ -4,6 +4,7 @@
 const fastify = require('fastify')
 const pino = require('pino')
 const streamLog = require('./log/log')
+const serverConfig = require('./src/config')
 
 const app = fastify({
   logger: pino(streamLog)
@@ -15,9 +16,9 @@ app.get('/', async (req, reply) => {
 })
 
 // Run the server
-app.listen(3000, '0.0.0.0')
+app.listen(serverConfig.port, '0.0.0.0')
   .then(() => {
-    console.log(`server listening on 3000 port`)
+    console.log(`server listening on ${serverConfig.port} port`)
   })
   .catch(err => {
     console.error(err)
