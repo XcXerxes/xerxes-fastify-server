@@ -26,7 +26,7 @@ const adminSchema = new Schema({
   strict: true
 })
 
-adminSchema.pre('save', function(next) {
+adminSchema.post('save', function(next) {
   var currentDate = new Date();
   this.updated_at = currentDate;
   next();

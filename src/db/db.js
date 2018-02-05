@@ -1,6 +1,9 @@
 const mongoose = require('mongoose')
 const serverConfig = require('../config')
 
+/**
+ * @author leo
+ */
 mongoose.connect(serverConfig.db_url, {
   autoIndex: false
 })

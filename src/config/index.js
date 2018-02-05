@@ -7,7 +7,7 @@ const config = {
     port: 9999
   }
 }
-if (process.env.NODE_ENV === 'development') {
+if (!process.env.NODE_ENV || process.env.NODE_ENV === 'development') {
   module.exports = config.dev
 } else {
   module.exports = config.prod

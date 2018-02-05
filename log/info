@@ -1,0 +1,3 @@
+{"level":30,"time":1517827543944,"msg":"Server listening at http://0.0.0.0:3000","pid":75577,"hostname":"iMac-2.local","v":1}
+{"level":30,"time":1517827551721,"msg":"incoming request","pid":75577,"hostname":"iMac-2.local","reqId":1,"req":{"id":1,"method":"POST","url":"/api/backend/login","remoteAddress":"127.0.0.1","remotePort":53518},"v":1}
+{"level":30,"time":1517827553653,"msg":"request completed","pid":75577,"hostname":"iMac-2.local","reqId":1,"res":{"statusCode":200},"responseTime":1929.8830469846725,"v":1}
