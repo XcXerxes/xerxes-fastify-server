@@ -1,7 +1,7 @@
 const config = {
   dev: {
     db_url: 'mongodb://localhost:27017/xcxerxes',
-    port: 3000
+    port: 8888
   },
   prod: {
     port: 9999
